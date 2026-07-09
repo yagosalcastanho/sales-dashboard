@@ -1,4 +1,4 @@
-cat > /mnt/user-data/outputs/README.md << 'ENDOFFILE'
+
 # Executive Sales Dashboard
 
 **[Português](#português) • [English](#english)**
