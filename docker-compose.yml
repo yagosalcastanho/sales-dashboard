@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_sales_dash
+    environment:
+      POSTGRES_USER: dash_user
+      POSTGRES_PASSWORD: dash_pass
+      POSTGRES_DB: sales_dashboard_db
+    ports:
+      - "5436:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/1_create.sql
+      - ./sql/seed_data.sql:/docker-entrypoint-initdb.d/2_seed.sql
+
+volumes:
+  postgres_data:
