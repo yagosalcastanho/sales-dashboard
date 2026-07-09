@@ -309,10 +309,9 @@ sales-dashboard/
 │   └── sales_clean.csv
 ├── dashboard/
 │   └── sales_dashboard.pbix
-├── Fluxograma/
-│   └── fluxograma.png
-├── Print/
-│   └── dashboard.png
+├── images/
+│   ├── Fluxograma.png
+│   └── Print.png
 ├── docker-compose.yml
 ├── requirements.txt
 ├── .env
